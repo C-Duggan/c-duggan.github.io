@@ -4,8 +4,8 @@ title: Mini 6-Axis Robot Arm
 ---
 <img src="{{ site.github.url }}/assets/img/mini_arm_new_thumbnail.jpg" alt="bing" width="100%"/>
 
-## Info
-Detailed writeup coming soon, for now enjoy some photos:
+
+### Detailed writeup coming soon, for now enjoy some photos:
 
 
 <img src="{{ site.github.url }}/assets/img/mini_arm_j1.jpg" alt="bing" width="100%"/>
