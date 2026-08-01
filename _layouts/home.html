@@ -2,66 +2,81 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h3 class="fw-bold">About me</h3>
-    <p>I’m Mechatronics and Robotics Engineering student at Queen’s University, with a passion for building reliable, real-world systems. <br> I have experience leading multidisciplinary design teams and now work as a Mechanical Engineer Intern at Sanctuary AI developing humanoid robots. </p>
-    <p><a href="{{ site.github.url }}/assets/reference_letter_dean.pdf">Reference letter</a> - Kevin Deluzio, Dean of Smith Engineering</p>
-    <p><a href="{{ site.github.url }}/cv">My resume</a></p>
-    <p><a href="{{ site.github.url }}/contact">Contact me</a></p>
+<section class="jg-hero">
+  <div>
+    <span class="jg-eyebrow">{{ site.description }}</span>
+    <h1 class="jg-hero__title">{{ site.title }}</h1>
+    <p class="jg-hero__lede">I'm a Mechatronics and Robotics Engineering student at Queen's University, with a passion for building reliable, real-world systems. I have experience leading multidisciplinary design teams and now work as a Mechanical Engineer Intern at Sanctuary AI developing humanoid robots.</p>
+    <div class="jg-hero__actions">
+      <a href="{{ site.github.url }}/projects" class="jg-btn jg-btn--primary">View Projects</a>
+      <a href="{{ site.github.url }}/cv" class="jg-btn">Resume</a>
+      <a href="{{ site.github.url }}/contact" class="jg-btn">Contact</a>
+    </div>
+    <p style="margin-top: 1.25rem; font-size: 0.85rem;">
+      <a href="{{ site.github.url }}/assets/reference_letter_dean.pdf" class="jg-link">Reference letter</a>
+      <span class="jg-brand__tagline" style="text-transform:none; letter-spacing:normal;"> — Kevin Deluzio, Dean of Smith Engineering</span>
+    </p>
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/cover_thumbnail_cropped.jpg" alt="Home" width="100%">
+  <div class="jg-hero__media">
+    <img src="{{ site.github.url }}/assets/img/cover_thumbnail_cropped.jpg" alt="{{ site.title }}">
   </div>
-</div>
+</section>
 
-<div class="row g-5 mb-5">
-  <h3 class="fw-bold border-bottom pb-3 mb-2">Projects</h3>
-  <div class="col-md-6">
+<section class="jg-section">
+  <span class="jg-eyebrow">Selected Work</span>
+  <h2 class="jg-section-title">Projects</h2>
+  <div style="max-width: 60ch; margin-bottom: var(--space-4); color: var(--text-muted);">
     {{ content }}
-    <p><a href="{{ site.github.url }}/projects">View All Projects</a></p>
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/mini_arm_new_thumbnail.jpg" alt="Home" width="100%">
-  </div>
-</div>
 
-<!--{% include publications.html %}
-
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+  <div class="jg-featured-grid">
+    {% for project in site.data.settings.projects limit:6 %}
+      <div class="jg-card">
+        <div class="jg-card__media">
+          <img src="{{ site.github.url }}/{{ project.image }}" alt="{{ project.name }}" loading="lazy">
+        </div>
+        <div class="jg-card__body">
+          <span class="jg-card__meta">{{ project.type }} · {{ project.year }}</span>
+          <h3 class="jg-card__title">{{ project.name }}</h3>
+          {% if project.show_more_info %}
+            <p class="jg-card__footer"><a href="{{ site.github.url }}/projects/{{ project.url }}" class="jg-link">More info</a></p>
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   </div>
-</div>-->
 
-<h3 class="fw-bold border-bottom pb-3 mb-5">Achivements</h3>
-{% for award in site.data.settings.awards %}
-<div class="row g-5 mb-5"> 
-  <div class="col-md-6">
-    <h5><strong>{{ award.name }}, </strong>{{ award.year }}</h5>
-    <p style="color: rgb(1,95,138)">{{award.type}}</p>
-    <p>{{ award.info }}</p>
+  <p style="margin-top: var(--space-4);"><a href="{{ site.github.url }}/projects" class="jg-btn">View All Projects</a></p>
+</section>
+
+<section class="jg-section">
+  <span class="jg-eyebrow">Recognition</span>
+  <h2 class="jg-section-title">Achievements</h2>
+  <div class="jg-grid">
+    {% for award in site.data.settings.awards %}
+      <div class="jg-card">
+        <div class="jg-card__media">
+          <img src="{{ site.github.url }}/{{ award.image }}" alt="{{ award.name }}" loading="lazy">
+        </div>
+        <div class="jg-card__body">
+          <span class="jg-card__meta">{{ award.type }} · {{ award.year }}</span>
+          <h3 class="jg-card__title">{{ award.name }}</h3>
+          <p class="jg-card__desc">{{ award.info }}</p>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/{{ award.image }}" alt="Contact" width="100%">
-  </div>
-</div>
-{% endfor %}
+</section>
 
-
-
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Other links</h3>
+<section class="jg-section">
+  <span class="jg-eyebrow">Elsewhere</span>
+  <h2 class="jg-section-title">Other links</h2>
+  <div>
     {% for link in site.data.settings.links %}
-      <p><a href="{{ link.url }}">{{ link.title }}</a> - {{ link.description }}</p>
+      <div class="jg-list-row">
+        <a href="{{ link.url }}" class="jg-link">{{ link.title }}</a>
+        <span style="color: var(--text-muted);">{{ link.description }}</span>
+      </div>
     {% endfor %}
   </div>
-</div>
-
-<div class="row g-5 mb-2">
-  <p>This website was made with github pages and forked from the "academic" jekyll theme created by LeNPaul</p>
-</div>
+</section>

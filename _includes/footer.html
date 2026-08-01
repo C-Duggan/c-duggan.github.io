@@ -1,8 +1,11 @@
-<footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
+<footer class="jg-footer">
+  <div class="jg-container jg-footer__inner">
+    <p class="jg-footer__note">
+      © {{ 'now' | date: "%Y" }} {{ site.title }}. Built with Jekyll on GitHub Pages, forked from the "academic" theme by LeNPaul.
+    </p>
+    <div class="jg-footer__social">
       {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
+        <a href="{{ item.link }}" aria-label="{{ item.icon }}"><i class="fab fa-{{ item.icon }}"></i></a>
       {% endfor %}
     </div>
   </div>

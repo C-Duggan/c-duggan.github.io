@@ -2,13 +2,17 @@
 layout: default
 ---
 
-{{ content }}
+<section class="jg-section" style="border-top: none; padding-top: var(--space-4);">
+  <span class="jg-eyebrow">Coursework</span>
+  <h1 class="jg-section-title">{{ page.title }}</h1>
+  {{ content }}
 
-<div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Courses</h3>
     {% for course in site.data.settings.courses %}
-      <p><a href="{{ site.github.url }}/courses/{{ course.url}}">{{ course.name }}</a></p>
+      <div class="jg-list-row">
+        <a href="{{ site.github.url }}/courses/{{ course.url }}" class="jg-link">{{ course.name }}</a>
+        <i class="fas fa-arrow-right" aria-hidden="true" style="color: var(--text-muted);"></i>
+      </div>
     {% endfor %}
   </div>
-</div>
+</section>

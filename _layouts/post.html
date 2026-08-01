@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h3>
+<section class="jg-section" style="border-top: none; padding-top: var(--space-4);">
+  <span class="jg-eyebrow">{{ page.date | date: "%B %-d, %Y" }}</span>
+  <h1 class="jg-section-title">{{ page.title }}</h1>
+  <article class="jg-article">
     {{ content }}
-  </div>
-</div>
+  </article>
+</section>

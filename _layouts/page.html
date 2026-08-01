@@ -2,9 +2,20 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h3>
+{% assign slug = page.url | split: "/" | last | remove: ".html" %}
+{% assign proj = site.data.settings.projects | where: "url", slug | first %}
+
+<section class="jg-section" style="border-top: none; padding-top: var(--space-4);">
+  {% if page.url contains '/projects/' %}
+    <p style="margin-bottom: var(--space-2);"><a href="{{ site.github.url }}/projects" class="jg-link">&larr; All Projects</a></p>
+    {% if proj %}
+      <span class="jg-eyebrow">{{ proj.type }} · {{ proj.year }}</span>
+    {% endif %}
+  {% endif %}
+
+  <h1 class="jg-section-title">{{ page.title }}</h1>
+
+  <article class="jg-article">
     {{ content }}
-  </div>
-</div>
+  </article>
+</section>

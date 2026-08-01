@@ -2,46 +2,53 @@
 layout: default
 ---
 
-{{ content }}
+<section class="jg-section" style="border-top: none; padding-top: var(--space-4);">
+  <span class="jg-eyebrow">Curriculum Vitae</span>
+  <h1 class="jg-section-title">{{ page.title }}</h1>
+  {{ content }}
 
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Resume</h3>
-    <div class="row g-5 mb-5">
-      <div class="col-md-12">
-        <h4>Experience</h4>
-      </div>
-      <div class="col-md-12">
-        {% for section in site.data.cv.pro-experience %}
-          <p> <strong>{{ section.title }} </strong><em>{{ section.time }}</em></p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Awards</h4>
-      </div>
-      <div class="col-md-9">
-        {% for section in site.data.cv.awards %}
-          <p> <strong>{{ section.title }} </strong><em>{{ section.time }}</em></p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Education</h4>
-      </div>
-      <div class="col-md-9">
-        {% for section in site.data.cv.education %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <p>Last updated: June 16th, 2025</p>
-    <p><a href="{{ site.github.url }}/assets/james_gullberg_resume_june25.pdf">Download PDF</a></p>
-    <p><a href="{{ site.github.url }}/assets/reference_letter_dean.pdf">Reference letter</a> - Kevin Deluzio, Dean of Smith Engineering</p>
+  <div style="display:flex; flex-wrap: wrap; gap: 1rem; margin-bottom: var(--space-5);">
+    <a href="{{ site.github.url }}/assets/james_gullberg_resume_june25.pdf" class="jg-btn jg-btn--primary">Download PDF</a>
+    <a href="{{ site.github.url }}/assets/reference_letter_dean.pdf" class="jg-btn">Reference letter</a>
   </div>
-</div>
+
+  <div style="margin-bottom: var(--space-5);">
+    <h2 style="font-size:1.1rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); margin-bottom: var(--space-3);">Experience</h2>
+    {% for section in site.data.cv.pro-experience %}
+      <div class="jg-entry">
+        <div class="jg-entry__head">
+          <h3 class="jg-entry__title">{{ section.title }}</h3>
+          <span class="jg-entry__time">{{ section.time }}</span>
+        </div>
+        <div class="jg-entry__body">{{ section.description }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div style="margin-bottom: var(--space-5);">
+    <h2 style="font-size:1.1rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); margin-bottom: var(--space-3);">Awards</h2>
+    {% for section in site.data.cv.awards %}
+      <div class="jg-entry">
+        <div class="jg-entry__head">
+          <h3 class="jg-entry__title">{{ section.title }}</h3>
+          <span class="jg-entry__time">{{ section.time }}</span>
+        </div>
+        {% if section.description and section.description != " " %}
+          <div class="jg-entry__body">{{ section.description }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div>
+    <h2 style="font-size:1.1rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); margin-bottom: var(--space-3);">Education</h2>
+    {% for section in site.data.cv.education %}
+      <div class="jg-entry">
+        <h3 class="jg-entry__title" style="margin-bottom:0.4rem;">{{ section.title }}</h3>
+        <div class="jg-entry__body">{{ section.description }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <p style="margin-top: var(--space-4); font-size: 0.82rem; color: var(--text-muted);">Last updated: June 16th, 2025</p>
+</section>
