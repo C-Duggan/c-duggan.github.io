@@ -1,32 +1,36 @@
-- title: 'Bristol Myers Squibb - Global Capital Project Engineering Intern'
-  time: 'June 2026 - August 2026'
-  description: '<ul>
-    <li>Managed scope, budgeting, and contractor coordination for a \$500K capital facility renovation project.</li>
-    <li>Analyzed capital budgeting and financial cost-control workflows, applying cost-certainty estimates, funding thresholds, and change management processes to prevent scope creep.</li>
-    <li>Identified and tracked project risks (such as air quality and environmental hazards) during site walks and cross-functional meetings, ensuring proactive risk mitigation and safety compliance.</li>
-    <li>Obtained hands-on exposure to EPCM project delivery by collaborating with external design firms on the end-to-end lifecycle from initial Basis of Design (BOD) to procurement and construction.</li>
-    </ul>'
+- title: "Bristol Myers Squibb - Global Capital Project Engineering Intern"
+  time: "June 2026 - August 2026"
+  description: >-
+    <ul>
+      <li>Managed scope, budgeting, and contractor coordination for a $500K capital facility renovation project.</li>
+      <li>Analyzed capital budgeting and financial cost-control workflows, applying cost-certainty estimates, funding thresholds, and change management processes to prevent scope creep.</li>
+      <li>Identified and tracked project risks (such as air quality and environmental hazards) during site walks and cross-functional meetings, ensuring proactive risk mitigation and safety compliance.</li>
+      <li>Obtained hands-on exposure to EPCM project delivery by collaborating with external design firms on the end-to-end lifecycle from initial Basis of Design (BOD) to procurement and construction.</li>
+    </ul>
 
-- title: 'Space Technology & Research Laboratory - Research Assistant'
-  time: 'March 2025 - January 2026'
-  description: '<ul>
-    <li>Analyzed structural and dynamic trade-offs to support CubeSat testing reliability.</li>
-    <li>Assisted with design and assembly of a near-frictionless reaction test table that simulates how satellites move in microgravity when influenced by a robotic arm.</li>
-    <li>Conducted static and dynamic analyses to optimize counterweight placement on a satellite mock-up.</li>
-    </ul>'
+- title: "Space Technology & Research Laboratory - Research Assistant"
+  time: "March 2025 - January 2026"
+  description: >-
+    <ul>
+      <li>Analyzed structural and dynamic trade-offs to support CubeSat testing reliability.</li>
+      <li>Assisted with design and assembly of a near-frictionless reaction test table that simulates how satellites move in microgravity when influenced by a robotic arm.</li>
+      <li>Conducted static and dynamic analyses to optimize counterweight placement on a satellite mock-up.</li>
+    </ul>
 
-- title: 'Abbey Adams Byelick & Mueller, LLP - IT Advisor'
-  time: 'January 2025 - July 2025'
-  description: '<ul>
-    <li>Implemented cybersecurity protocols to protect sensitive legal data and minimize system vulnerabilities.</li>
-    <li>Restructured legacy file directories and database storage systems, accelerating information retrieval times and boosting firm-wide productivity.</li>
-    <li>Administered enterprise cloud-based architecture, streamlining data accessibility and ensuring seamless operational workflows for over 50 end-users.</li>
-    <li>Directed the overhaul and daily management of the corporate website, optimizing UI/UX and ensuring maximum uptime for internal and client-facing digital assets.</li>
-    </ul>'
+- title: "Abbey Adams Byelick & Mueller, LLP - IT Advisor"
+  time: "January 2025 - July 2025"
+  description: >-
+    <ul>
+      <li>Implemented cybersecurity protocols to protect sensitive legal data and minimize system vulnerabilities.</li>
+      <li>Restructured legacy file directories and database storage systems, accelerating information retrieval times and boosting firm-wide productivity.</li>
+      <li>Administered enterprise cloud-based architecture, streamlining data accessibility and ensuring seamless operational workflows for over 50 end-users.</li>
+      <li>Directed the overhaul and daily management of the corporate website, optimizing UI/UX and ensuring maximum uptime for internal and client-facing digital assets.</li>
+    </ul>
 
-- title: 'Starbucks - Barista & Shift Lead'
-  time: 'February 2021 - February 2023'
-  description: '<ul>
-    <li>Managed daily store operations, inventory control, and staff training on customer service standards.</li>
-    <li>Executed high-volume customer service operations, resolving escalations and maintaining peak efficiency during high-traffic operational windows.</li>
-    </ul>'
+- title: "Starbucks - Barista & Shift Lead"
+  time: "February 2021 - February 2023"
+  description: >-
+    <ul>
+      <li>Managed daily store operations, inventory control, and staff training on customer service standards.</li>
+      <li>Executed high-volume customer service operations, resolving escalations and maintaining peak efficiency during high-traffic operational windows.</li>
+    </ul>
