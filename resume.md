@@ -1,4 +1,5 @@
 ---
 layout: cv
-title: "CV"
+title: "Resume"
+permalink: /resume/
 ---
