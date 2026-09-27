@@ -10,9 +10,28 @@
       <div>
         <h2 style="font-size: 1.5rem; margin-bottom: 0.3rem;">{{ contact.name }}</h2>
         <p class="jg-brand__tagline" style="text-transform:none; letter-spacing:normal; font-size:0.95rem; margin-bottom: var(--space-3);">{{ contact.department }} · {{ contact.institution }}</p>
-        <p><i class="fas fa-envelope" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i> <a href="mailto:{{ contact.email }}" class="jg-link">{{ contact.email }}</a></p>
-        <p><i class="fas fa-phone" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i> {{ contact.phone }}</p>
-        <p><i class="fas fa-map-marker-alt" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i> {{ contact.location }}</p>
+        
+        {% if contact.school_email %}
+          <p>
+            <i class="fas fa-university" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i>
+            <a href="mailto:{{ contact.school_email }}" class="jg-link">{{ contact.school_email }}</a>
+          </p>
+        {% endif %}
+
+        {% if contact.personal_email %}
+          <p>
+            <i class="fas fa-envelope" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i>
+            <a href="mailto:{{ contact.personal_email }}" class="jg-link">{{ contact.personal_email }}</a>
+          </p>
+        {% endif %}
+
+        {% if contact.phone %}
+          <p><i class="fas fa-phone" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i> {{ contact.phone }}</p>
+        {% endif %}
+
+        {% if contact.location %}
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true" style="width:1.4rem; color: var(--accent);"></i> {{ contact.location }}</p>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
