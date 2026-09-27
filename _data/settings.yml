@@ -1,5 +1,6 @@
 menu:
   - {name: 'projects', url: '/projects'}
+  - {name: 'resume', url: '/resume'}
   - {name: 'contact', url: '/contact'}
 
 projects:
