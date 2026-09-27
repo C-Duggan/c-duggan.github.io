@@ -3,7 +3,6 @@ menu:
   - {name: 'contact', url: '/contact'}
 
 projects:
-  - {name: 'Featured Engineering Project', type: 'Capstone / Design Project', year: '2026', info: 'Description of your primary engineering project, design challenge, or mechanical system. Detail the tools, analysis, CAD modeling, and manufacturing methods used.', image: 'assets/img/christian.jpg', url: 'project-one', show_more_info: false}
 # - {name: 'Project Template', type: 'Personal Project', year: '2026', info: 'Brief technical summary of your project scope, hardware/software stack, and performance metrics.', image: 'assets/img/placeholder.jpg', url: 'project-two', show_more_info: false}
 
 awards: []
