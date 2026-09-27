@@ -46,25 +46,6 @@ layout: default
 </section>
 
 <section class="jg-section">
-  <span class="jg-eyebrow">Recognition</span>
-  <h2 class="jg-section-title">Achievements</h2>
-  <div class="jg-grid">
-    {% for award in site.data.settings.awards %}
-      <div class="jg-card">
-        <div class="jg-card__media">
-          <img src="{{ site.github.url }}/{{ award.image }}" alt="{{ award.name }}" loading="lazy">
-        </div>
-        <div class="jg-card__body">
-          <span class="jg-card__meta">{{ award.type }} · {{ award.year }}</span>
-          <h3 class="jg-card__title">{{ award.name }}</h3>
-          <p class="jg-card__desc">{{ award.info }}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="jg-section">
   <span class="jg-eyebrow">Elsewhere</span>
   <h2 class="jg-section-title">Other links</h2>
   <div>
