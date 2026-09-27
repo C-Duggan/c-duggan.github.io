@@ -3,6 +3,6 @@ layout: home
 title: "Home"
 ---
 
-I've had the opportunity to work on a diverse range of projects that showcase my skills from mechanical design and 3D printing to electrical and software. Each project has been a valuable learning experience and a testament to my passion for solving complex problems and creating.
+A collection of projects spanning mechanical design, 3D printing, fabrication, electrical systems, and software development.
 
-I invite you to explore my projects to see the detailed write-ups, CAD files, source code, and scematics.
+These are personal projects that I have enjoyed working on in my free time that include my personal hobbies and interests while also developing my skills and applications as an engineer.
