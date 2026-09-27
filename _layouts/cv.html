@@ -8,7 +8,7 @@ layout: default
   {{ content }}
 
   <div style="display:flex; flex-wrap: wrap; gap: 1rem; margin-bottom: var(--space-5);">
-   <a href="{{ site.github.url }}/assets/ChristianDuggan_Resume-1.pdf" class="btn btn-default btn-lg" target="_blank">DOWNLOAD PDF</a>
+    <a href="{{ site.github.url }}/assets/ChristianDuggan_Resume-1.pdf" class="btn btn-default btn-lg" target="_blank">DOWNLOAD PDF</a>
   </div>
 
   <div style="margin-bottom: var(--space-5);">
@@ -24,21 +24,6 @@ layout: default
     {% endfor %}
   </div>
 
-  <div style="margin-bottom: var(--space-5);">
-    <h2 style="font-size:1.1rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); margin-bottom: var(--space-3);">Awards</h2>
-    {% for section in site.data.cv.awards %}
-      <div class="jg-entry">
-        <div class="jg-entry__head">
-          <h3 class="jg-entry__title">{{ section.title }}</h3>
-          <span class="jg-entry__time">{{ section.time }}</span>
-        </div>
-        {% if section.description and section.description != " " %}
-          <div class="jg-entry__body">{{ section.description }}</div>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-
   <div>
     <h2 style="font-size:1.1rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--text-muted); margin-bottom: var(--space-3);">Education</h2>
     {% for section in site.data.cv.education %}
@@ -48,6 +33,4 @@ layout: default
       </div>
     {% endfor %}
   </div>
-
-  <p style="margin-top: var(--space-4); font-size: 0.82rem; color: var(--text-muted);">Last updated: June 16th, 2025</p>
 </section>
