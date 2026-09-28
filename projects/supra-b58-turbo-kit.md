@@ -98,7 +98,6 @@ Traditional inline-six exhaust manifolds utilize six individual runners merged i
 
 To maximize structural reliability and packaging efficiency, I opted for a **log-style manifold** that mirrors the dual-port cylinder head layout while sweeping upward to elevate the turbocharger into a top-mount configuration. I modeled the layout in SolidWorks to verify:
 * Minimum pipe inner diameter to avoid exhaust choking
-* Equalized runner length approximations
 * Clearance relative to the strut tower, hood line, and valve cover
 
 I sourced 304 stainless steel straight tubing along with 45° and 90° mandrel bends from a local supplier. To guarantee an airtight seal at the cylinder head, I sourced pre-machined steel B58 flanges from a specialized machine shop, matching their internal diameter directly to my stainless tubing.
