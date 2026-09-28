@@ -10,7 +10,7 @@ layout: default
   {% if page.url contains '/projects/' %}
     <p style="margin-bottom: var(--space-2);"><a href="{{ site.github.url }}/projects" class="jg-link">&larr; All Projects</a></p>
     {% if proj %}
-      <span class="jg-eyebrow">{{ proj.type }} · {{ proj.year }}</span>
+      <span class="jg-eyebrow">{{ proj.type }}{% if proj.status %} · {{ proj.status }}{% endif %}</span>
     {% endif %}
   {% endif %}
 

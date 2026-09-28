@@ -22,7 +22,7 @@ layout: default
           <img src="{{ site.github.url }}/{{ project.image }}" alt="{{ project.name }}" loading="lazy">
         </div>
         <div class="jg-card__body">
-          <span class="jg-card__meta">{{ project.type }} {{ project.status }}</span>
+          <span class="jg-card__meta">{{ project.type }}{% if project.status %} · {{ project.status }}{% endif %}</span>
           <h3 class="jg-card__title">{{ project.name }}</h3>
           <p class="jg-card__desc">{{ project.info }}</p>
           {% if project.show_more_info %}
