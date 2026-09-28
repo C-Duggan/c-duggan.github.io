@@ -2,7 +2,8 @@
 layout: default
 ---
 
-{% assign slug = page.url | split: "/" | last | remove: ".html" %}
+{% assign fallback_slug = page.url | split: "/" | last | remove: ".html" %}
+{% assign slug = page.project_slug | default: fallback_slug %}
 {% assign proj = site.data.settings.projects | where: "url", slug | first %}
 
 <section class="jg-section" style="border-top: none; padding-top: var(--space-4);">
