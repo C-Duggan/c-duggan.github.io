@@ -4,7 +4,7 @@ menu:
   - {name: 'contact', url: '/contact'}
 
 projects:
-  - {name: 'Custom B58 Top-Mount Turbo Kit', type: 'Personal Project', year: '2024', info: 'Designed and fabricated a custom top-mount Garrett 3582 turbocharger kit for the Toyota Supra A90 (B58 engine), including stainless manifold, downpipe, wastegate routing, and sensor integration.', image: 'assets/projects/supra-b58-turbo/turbo-placement-mockup.jpg', url: 'supra-b58-turbo-kit', show_more_info: true}
+  - {name: 'Custom B58 Top-Mount Turbo Kit', type: 'Personal Project', status: 'Completed', info: 'Designed and fabricated a custom top-mount Garrett 3582 turbocharger kit for the Toyota Supra A90 (B58 engine), including stainless manifold, downpipe, wastegate routing, and sensor integration.', image: 'assets/projects/supra-b58-turbo/turbo-placement-mockup.jpg', url: 'supra-b58-turbo-kit', show_more_info: true}
 
 awards: []
 # - {name: 'Award Name', type: 'Organization / Competition', year: '2026', info: 'Award details', image: 'assets/img/award.jpg'}
